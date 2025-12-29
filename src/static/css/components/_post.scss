@@ -39,6 +39,9 @@
         font-size: 0.85em;
         color: _palette(fg-light);
         margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       > :last-child {

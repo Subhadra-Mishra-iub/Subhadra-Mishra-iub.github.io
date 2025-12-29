@@ -38,6 +38,17 @@ const Projects = () => {
             </button>
           </div>
         )}
+        {showAll && data.length > FEATURED_COUNT && (
+          <div className="projects-footer">
+            <button
+              type="button"
+              className="button"
+              onClick={() => setShowAll(false)}
+            >
+              Show Less
+            </button>
+          </div>
+        )}
         <div className="projects-social">
           <p>For more projects, visit my GitHub</p>
           <ContactIcons />

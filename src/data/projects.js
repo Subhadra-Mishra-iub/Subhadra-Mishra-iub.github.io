@@ -4,7 +4,7 @@ const data = [
     subtitle: 'AI-Powered Emotional Wellness Tracking Platform',
     // image: '/images/projects/calmcompass.jpg', // Add image when available
     link: 'https://github.com/Subhadra-Mishra-iub/calmcompass', // Add GitHub link when available
-    date: '2024-12-01',
+    date: '2025-12-01',
     desc:
       'An emotional wellness tracking application built with Next.js, Supabase, and AI integration. '
       + 'Overcame challenges including database connections for serverless deployments, React debugging, '

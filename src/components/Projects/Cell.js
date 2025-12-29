@@ -6,19 +6,21 @@ const Cell = ({ data }) => (
   <div className="cell-container">
     <article className="mini-post">
       <header>
-        <h3>
-          {data.link ? (
-            <a href={data.link} target="_blank" rel="noopener noreferrer">
-              {data.title}
-            </a>
-          ) : (
-            <span>{data.title}</span>
-          )}
-        </h3>
+        <div className="header-top">
+          <h3>
+            {data.link ? (
+              <a href={data.link} target="_blank" rel="noopener noreferrer">
+                {data.title}
+              </a>
+            ) : (
+              <span>{data.title}</span>
+            )}
+          </h3>
+          <time className="published">
+            {dayjs(data.date).format('MMM YYYY')}
+          </time>
+        </div>
         {data.subtitle && <p className="subtitle">{data.subtitle}</p>}
-        <time className="published">
-          {dayjs(data.date).format('MMMM, YYYY')}
-        </time>
       </header>
       {data.image && (
         data.link ? (
