@@ -79,6 +79,12 @@ body {
           font-weight: _font(weight-heading);
           letter-spacing: _font(kerning-heading);
           text-transform: uppercase;
+          @include vendor("transition", "color #{_duration(transition)} ease");
+          
+          &.active {
+            color: _palette(accent);
+            font-weight: _font(weight-heading-bold);
+          }
         }
       }
     }

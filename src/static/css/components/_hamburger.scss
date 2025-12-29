@@ -25,6 +25,11 @@
   li a h3:hover {
     color: _palette(accent);
   }
+  
+  li a.active h3 {
+    color: _palette(accent);
+    font-weight: _font(weight-heading-bold);
+  }
 
   li {
     display: block !important;
