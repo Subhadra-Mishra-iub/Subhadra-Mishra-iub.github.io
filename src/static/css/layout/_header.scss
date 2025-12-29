@@ -73,17 +73,26 @@ body {
         }
 
         a {
-          border-bottom: 0;
+          border-bottom: 2px solid transparent;
           font-family: _font(family-heading);
           font-size: 0.7em;
           font-weight: _font(weight-heading);
           letter-spacing: _font(kerning-heading);
           text-transform: uppercase;
-          @include vendor("transition", "color #{_duration(transition)} ease");
-          
+          padding: 0 0.5em;
+          @include vendor("transition", "all #{_duration(transition)} ease");
+          position: relative;
+
+          &:hover {
+            color: _palette(accent);
+            border-bottom-color: _palette(accent);
+            cursor: pointer;
+          }
+
           &.active {
             color: _palette(accent);
             font-weight: _font(weight-heading-bold);
+            border-bottom-color: _palette(accent);
           }
         }
       }

@@ -6,14 +6,34 @@
     top: -4.5em;
   }
 
-  .link-container h4 {
-    text-decoration: none;
-    border-bottom: none;
-    display: inline-flex;
+  .link-container {
+    margin-top: 1em;
 
-    a {
-      padding: 0 0.5em;
-      margin: 0;
+    h4 {
+      text-decoration: none;
+      border-bottom: none;
+      display: inline-flex;
+      margin: 0 0.25em;
+
+      a {
+        padding: 0.4em 0.8em;
+        margin: 0;
+        color: _palette(fg);
+        font-weight: _font(weight-heading);
+        text-transform: uppercase;
+        letter-spacing: _font(kerning-heading);
+        font-size: 0.7em;
+        border: 1px solid _palette(border);
+        border-radius: 3px;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: _palette(accent);
+          border-color: _palette(accent);
+          background-color: _palette(bg-alt);
+          cursor: pointer;
+        }
+      }
     }
   }
 
@@ -87,15 +107,32 @@
 }
 
 .degree-container {
-  h4 {
-    font-weight: normal;
+  header {
+    position: relative;
   }
 
-  .degree {
-    margin-bottom: 0.1em;
-    text-transform: none;
-    letter-spacing: 0.16em;
-    font-size: 0.8em;
+  .degree-header {
+    @include vendor("display", "flex");
+    @include vendor("justify-content", "space-between");
+    @include vendor("align-items", "flex-start");
+    margin-bottom: 0.5em;
+
+    .degree {
+      font-weight: normal;
+      margin-bottom: 0;
+      text-transform: none;
+      letter-spacing: 0.16em;
+      font-size: 0.8em;
+      @include vendor("flex-grow", "1");
+    }
+
+    .degree-gpa {
+      font-size: 0.75em;
+      color: _palette(fg-light);
+      font-weight: _font(weight);
+      white-space: nowrap;
+      margin-left: 1em;
+    }
   }
 
   .school {
