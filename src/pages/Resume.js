@@ -46,6 +46,15 @@ const Resume = () => (
       {Object.entries(sections).map(([name, Section]) => (
         <Section key={name} />
       ))}
+      <div className="resume-download">
+        <a
+          href={`${process.env.PUBLIC_URL || ''}/Subhadra_Mishra_Resume.pdf`}
+          download="Subhadra_Mishra_Resume.pdf"
+          className="button button-primary"
+        >
+          Download Resume (PDF)
+        </a>
+      </div>
     </article>
   </Main>
 );

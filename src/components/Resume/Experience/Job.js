@@ -19,21 +19,6 @@ const Job = ({
         {endDate ? dayjs(endDate).format('MMMM YYYY') : 'PRESENT'}
       </p>
     </header>
-    {summary ? (
-      <Markdown
-        options={{
-          overrides: {
-            p: {
-              props: {
-                className: 'summary',
-              },
-            },
-          },
-        }}
-      >
-        {summary}
-      </Markdown>
-    ) : null}
     {highlights ? (
       <ul className="points">
         {highlights.map((highlight) => (
