@@ -1,14 +1,44 @@
 const data = [
   {
+    title: 'CI/CD Automation Platform',
+    subtitle: 'React, Node.js, Docker, GitHub Actions',
+    // image: '/images/projects/cicd.jpg', // Add image when available
+    link: 'https://github.com/Subhadra-Mishra-iub/ci-cd-automation-platform',
+    date: '2025-01-01',
+    desc:
+      'Built a full-stack platform simulating end-to-end pipelines for build, test, and deployment, demonstrating real-world CI/CD orchestration, rollback flows, and scalable workflow automation. '
+      + 'Integrated Pytest regression suites and deployed dashboards for pipeline health, latency, and test coverage.',
+  },
+  {
     title: 'CalmCompass',
     subtitle: 'AI-Powered Emotional Wellness Tracking Platform',
     // image: '/images/projects/calmcompass.jpg', // Add image when available
-    link: 'https://github.com/Subhadra-Mishra-iub/calmcompass', // Add GitHub link when available
+    link: 'https://github.com/Subhadra-Mishra-iub/calmcompass',
     date: '2025-12-01',
     desc:
       'An emotional wellness tracking application built with Next.js, Supabase, and AI integration. '
       + 'Overcame challenges including database connections for serverless deployments, React debugging, '
       + 'and Vercel configuration. Implemented features like collapsible actions and an AI chatbot for emotional support.',
+  },
+  {
+    title: 'GHC RSVP Tracker',
+    subtitle: 'React, TypeScript, Tailwind',
+    // image: '/images/projects/ghc-rsvp.jpg', // Add image when available
+    link: 'https://github.com/Subhadra-Mishra-iub',
+    date: '2025-01-01',
+    desc:
+      'Developed a responsive web application using React with dynamic filtering, search, and ICS export. '
+      + 'Optimized builds through lazy rendering and clean state management for fast client-side performance.',
+  },
+  {
+    title: 'Scalable Cloud Analytics Platform',
+    subtitle: 'AWS, Dask, Terraform',
+    // image: '/images/projects/dask.jpg', // Add image when available
+    link: 'https://github.com/Subhadra-Mishra-iub/Scalable-Cloud-Computing-for-Efficient-Big-Data-Analytics-A-Dask-Integration-Approach.git',
+    date: '2024-05-01',
+    desc:
+      'Provisioned AWS ECS/EFS infrastructure via Terraform and orchestrated distributed Dask clusters for large-scale data processing. '
+      + 'Improved ML pipeline performance by 71% via task parallelization, caching, and observability pipelines.',
   },
   {
     title: 'Nouveau Health Web Platform',
@@ -19,16 +49,6 @@ const data = [
     desc:
       'Full-stack healthcare management platform using React, Node.js, and MySQL. Built RESTful APIs with '
       + 'Google authentication, DUO 2FA, and Socket.io for secure, real-time communication across role-based dashboards.',
-  },
-  {
-    title: 'Scalable Cloud Analytics Platform',
-    subtitle: 'Dask + AWS Distributed Computing',
-    // image: '/images/projects/dask.jpg', // Add image when available
-    link: 'https://github.com/Subhadra-Mishra-iub/Scalable-Cloud-Computing-for-Efficient-Big-Data-Analytics-A-Dask-Integration-Approach.git',
-    date: '2024-05-01',
-    desc:
-      'Scalable distributed analytics platform on AWS using Dask and JupyterHub. Enabled big data processing '
-      + 'with ECS, EFS, and Docker. Reduced XGBoost hyperparameter tuning time by 71% (from 18.9 to 5.44 seconds).',
   },
   {
     title: 'Airline Performance Data Analysis',

@@ -39,17 +39,20 @@ const SideBar = () => (
         <p>
           <a href="mailto:subhadramishrag@gmail.com">subhadramishrag@gmail.com</a>
         </p>
+        <p>
+          <a href="tel:+18123454904">+1 (812) 345-4904</a>
+        </p>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Subhadra. I am a Computer Science graduate student at{' '}
-        <a href="https://luddy.indiana.edu">Indiana University Bloomington</a>.
-        {' '}Currently, I work as a Data Analyst, Schedule Director, and Broadcast TMC Operator at{' '}
-        <a href="https://wtiu.org">WFIU/WTIU</a>. I have experience in full-stack development,
-        {' '}data science, cloud computing, and machine learning.
+        Hi, I&apos;m Subhadra. I am a Software Engineer specializing in Backend (Python/Java),
+        {' '}Data Pipelines, Cloud, and Scalable Systems. Currently working as a Broadcast Systems Engineer
+        {' '}& Production Data Analyst at{' '}
+        <a href="https://wtiu.org">WTIU/WFIU</a>. I have experience in full-stack development,
+        {' '}data engineering, cloud infrastructure, and AI/ML systems.
       </p>
       <ul className="actions">
         <li>
