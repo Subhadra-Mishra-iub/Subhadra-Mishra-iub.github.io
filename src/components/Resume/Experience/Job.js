@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
-import Markdown from 'markdown-to-jsx';
 
 const Job = ({
   data: {
-    name, position, url, startDate, endDate, summary, highlights,
+    name, position, url, startDate, endDate, highlights,
   },
 }) => (
   <article className="jobs-container">
