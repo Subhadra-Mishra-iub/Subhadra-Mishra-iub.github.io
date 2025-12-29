@@ -1,5 +1,5 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+# This workflow will do a clean install of node dependencies, build the source code and run tests
+# Simplified to use single Node.js version and OS to avoid queue delays
 
 name: Node.js CI
 
@@ -11,12 +11,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint:
-    runs-on: ${{ matrix.os }}
-    timeout-minutes: 5
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
@@ -26,31 +23,6 @@ jobs:
       - run: npm ci
       - name: Lint
         run: npm run lint
-
-  build:
-    runs-on: ${{ matrix.os }}
-    timeout-minutes: 10
-    strategy:
-      matrix:
-        node-version: [16.x, 18.x, 20.x]
-        os: [ubuntu-20.04, windows-latest, macos-latest]
-        exclude:
-          - os: windows-latest
-            node-version: 16.x
-          - os: windows-latest
-            node-version: 18.x
-          - os: macos-latest
-            node-version: 16.x
-          - os: macos-latest
-            node-version: 18.x
-    steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm ci
       - name: Build
         run: npm run build
         env:
