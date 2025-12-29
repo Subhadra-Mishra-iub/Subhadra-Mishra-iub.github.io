@@ -17,14 +17,16 @@ const Cell = ({ data }) => (
           {dayjs(data.date).format('MMMM, YYYY')}
         </time>
       </header>
-      {data.link ? (
-        <a href={data.link} className="image">
-          <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
-        </a>
-      ) : (
-        <div className="image">
-          <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
-        </div>
+      {data.image && (
+        data.link ? (
+          <a href={data.link} className="image">
+            <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
+          </a>
+        ) : (
+          <div className="image">
+            <img src={`${process.env.PUBLIC_URL}${data.image}`} alt={data.title} />
+          </div>
+        )
       )}
       <div className="description">
         <p>{data.desc}</p>
@@ -37,7 +39,7 @@ Cell.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     link: PropTypes.string,
-    image: PropTypes.string.isRequired,
+    image: PropTypes.string,
     date: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
   }).isRequired,

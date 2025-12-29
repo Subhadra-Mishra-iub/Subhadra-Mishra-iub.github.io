@@ -2,7 +2,7 @@ const data = [
   {
     title: 'CalmCompass',
     subtitle: 'AI-Powered Emotional Wellness Tracking Platform',
-    image: '/images/projects/calmcompass.jpg',
+    // image: '/images/projects/calmcompass.jpg', // Add image when available
     date: '2024-12-01',
     desc:
       'An emotional wellness tracking application built with Next.js, Supabase, and AI integration. '
@@ -15,7 +15,7 @@ const data = [
   {
     title: 'Nouveau Health Web Platform',
     subtitle: 'Full-Stack Healthcare Management System',
-    image: '/images/projects/nouveau.jpg',
+    // image: '/images/projects/nouveau.jpg', // Add image when available
     link: 'https://github.com/Subhadra-Mishra-iub/nouveau_react_local.git',
     date: '2023-11-01',
     desc:
@@ -27,7 +27,7 @@ const data = [
   {
     title: 'Scalable Cloud Analytics Platform',
     subtitle: 'Dask + AWS Distributed Computing',
-    image: '/images/projects/dask.jpg',
+    // image: '/images/projects/dask.jpg', // Add image when available
     link: 'https://github.com/Subhadra-Mishra-iub/Scalable-Cloud-Computing-for-Efficient-Big-Data-Analytics-A-Dask-Integration-Approach.git',
     date: '2024-05-01',
     desc:
@@ -39,7 +39,7 @@ const data = [
   {
     title: 'Airline Performance Data Analysis',
     subtitle: 'Predictive Analytics for Flight Delays',
-    image: '/images/projects/airline.jpg',
+    // image: '/images/projects/airline.jpg', // Add image when available
     link: 'https://github.iu.edu/sumishra/airlines-performance-data-analysis.git',
     date: '2023-11-01',
     desc:
@@ -51,7 +51,7 @@ const data = [
   {
     title: 'NASA Climate Story Web Application',
     subtitle: 'NASA International Space Apps Challenge',
-    image: '/images/projects/nasa.jpg',
+    // image: '/images/projects/nasa.jpg', // Add image when available
     link: 'https://github.com/Subhadra-Mishra-iub/NASA_Climate_Story_frontend.git',
     date: '2024-10-01',
     desc:
