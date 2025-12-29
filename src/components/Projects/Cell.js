@@ -13,6 +13,7 @@ const Cell = ({ data }) => (
             <span>{data.title}</span>
           )}
         </h3>
+        {data.subtitle && <p className="subtitle">{data.subtitle}</p>}
         <time className="published">
           {dayjs(data.date).format('MMMM, YYYY')}
         </time>
@@ -38,6 +39,7 @@ const Cell = ({ data }) => (
 Cell.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string,
     link: PropTypes.string,
     image: PropTypes.string,
     date: PropTypes.string.isRequired,
