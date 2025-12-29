@@ -2,7 +2,36 @@
 
 .markdown {
   p {
-    margin: auto;
+    margin: 0 0 1.25em 0;
+    line-height: 1.7;
+    color: _palette(fg);
+  }
+
+  h2 {
+    font-size: 1.1em;
+    font-weight: _font(weight-heading-bold);
+    margin: 2em 0 1em 0;
+    color: _palette(fg-bold);
+    text-transform: uppercase;
+    letter-spacing: _font(kerning-heading);
+    border-bottom: 2px solid _palette(accent);
+    padding-bottom: 0.5em;
+  }
+
+  strong {
+    color: _palette(fg-bold);
+    font-weight: _font(weight-bold);
+  }
+
+  ul {
+    margin: 1em 0;
+    padding-left: 1.5em;
+    
+    li {
+      margin: 0.5em 0;
+      line-height: 1.6;
+      color: _palette(fg);
+    }
   }
 
   h1 {
