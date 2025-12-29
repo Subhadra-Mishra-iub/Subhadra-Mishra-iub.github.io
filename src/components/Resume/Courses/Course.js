@@ -3,8 +3,12 @@ import PropTypes from 'prop-types';
 
 const Course = ({ data, last }) => (
   <li className="course-container">
-    <a href={data.link}>
-      <h4 className="course-number">{data.number}:</h4>
+    <a href={data.link || '#'}>
+      {data.number ? (
+        <h4 className="course-number">{data.number}:</h4>
+      ) : (
+        <span className="course-number-empty" />
+      )}
       <p className="course-name">{data.title}</p>
     </a>
     {!last && (
@@ -17,8 +21,8 @@ const Course = ({ data, last }) => (
 
 Course.propTypes = {
   data: PropTypes.shape({
-    link: PropTypes.string.isRequired,
-    number: PropTypes.string.isRequired,
+    link: PropTypes.string,
+    number: PropTypes.string,
     title: PropTypes.string.isRequired,
   }).isRequired,
   last: PropTypes.bool,

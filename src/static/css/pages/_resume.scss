@@ -107,7 +107,18 @@
 
 .courses .course-number {
   display: inline;
+  min-width: 9em;
+  text-align: left;
+  margin-right: 0.5em;
+  font-weight: normal;
 }
+
+.courses .course-number-empty {
+  display: inline-block;
+  min-width: 9em;
+  margin-right: 0.5em;
+}
+
 .courses .course-name {
   display: inline;
   font-family: "Raleway", Helvetica, sans-serif;
