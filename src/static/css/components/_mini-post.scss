@@ -48,7 +48,7 @@
   }
 
   header {
-    @include padding(1.25em, 1.25em, 0.75em, 1.25em);
+    padding: 1.25em 1.25em 0.75em 1.25em;
     position: relative;
     @include vendor("flex-grow", "1");
 
