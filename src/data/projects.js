@@ -50,6 +50,16 @@ const data = [
       'Climate Story Web Application using Meteomatics API for real-time weather visualization. '
       + 'Built for NASA Space Apps Challenge as an interactive platform to visualize and track climate change data.',
   },
+  {
+    title: 'YouNTales – AI Storytelling Platform',
+    subtitle: 'AI-Powered Storytelling with React and MongoDB',
+    // image: '/images/projects/yountales.jpg', // Add image when available
+    link: 'https://github.com/Subhadra-Mishra-iub/U-and-Tales.git',
+    date: '2024-12-01',
+    desc:
+      'Interactive storytelling web app using React.js, Node.js, and MongoDB with user authentication and CRUD operations. '
+      + 'Enabled users to create profiles, generate AI-driven stories, and manage privacy settings with real-time notifications.',
+  },
 ];
 
 export default data;

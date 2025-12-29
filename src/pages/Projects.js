@@ -19,8 +19,7 @@ const Projects = () => {
           <div className="title">
             <h2>Featured Projects</h2>
             <p>
-              A selection of projects showcasing technical skills
-              {' '}and problem-solving abilities
+              Technical projects showcasing problem-solving abilities
             </p>
           </div>
         </header>

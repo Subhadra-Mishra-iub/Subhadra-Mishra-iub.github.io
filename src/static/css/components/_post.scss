@@ -36,12 +36,10 @@
       }
       
       p {
-        font-size: 0.85em;
+        font-size: 0.8em;
         color: _palette(fg-light);
         margin: 0;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        line-height: 1.4;
       }
 
       > :last-child {
