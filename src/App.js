@@ -10,10 +10,8 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Resume = lazy(() => import('./pages/Resume'));
 
-const basename = process.env.NODE_ENV === 'production' ? '/subhadramishra.github.io' : '';
-
 const App = () => (
-  <BrowserRouter basename={basename}>
+  <BrowserRouter>
     <Suspense fallback={<Main />}>
       <Routes>
         <Route path="/" element={<Index />} />
