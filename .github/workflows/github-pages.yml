@@ -42,7 +42,6 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
-          PUBLIC_URL: /subhadramishra.github.io
           REACT_APP_GA_TRACKING_ID: ${{ secrets.REACT_APP_GA_TRACKING_ID }}
       - name: Copy index.html to 404.html for GitHub Pages routing
         run: cp build/index.html build/404.html

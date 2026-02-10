@@ -17,7 +17,7 @@
 1. After creating the property, you'll see a "Data Streams" section
 2. Click "Add stream" → "Web"
 3. Enter:
-   - Website URL: `https://subhadra-mishra-iub.github.io/subhadramishra.github.io/`
+   - Website URL: `https://subhadra-mishra-iub.github.io/`
    - Stream name: "Portfolio Site"
 4. Click "Create stream"
 5. Copy your **Measurement ID** (format: `G-XXXXXXXXXX`)
@@ -44,7 +44,6 @@
      run: npm run build
      env:
        NODE_ENV: production
-       PUBLIC_URL: /subhadramishra.github.io
        REACT_APP_GA_TRACKING_ID: ${{ secrets.REACT_APP_GA_TRACKING_ID }}
    ```
 

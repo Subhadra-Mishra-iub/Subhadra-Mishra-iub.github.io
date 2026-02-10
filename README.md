@@ -4,7 +4,7 @@ Professional portfolio website showcasing my work, experience, and projects as a
 
 ## 🌐 Live Website
 
-Visit my portfolio: **[https://subhadra-mishra-iub.github.io/subhadramishra.github.io/](https://subhadra-mishra-iub.github.io/subhadramishra.github.io/)**
+Visit my portfolio: **[https://subhadra-mishra-iub.github.io/](https://subhadra-mishra-iub.github.io/)**
 
 ## 📋 About
 
@@ -32,8 +32,8 @@ Master's in Computer Science from Indiana University Bloomington with experience
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Subhadra-Mishra-iub/subhadramishra.github.io.git
-cd subhadramishra.github.io
+git clone https://github.com/Subhadra-Mishra-iub/Subhadra-Mishra-iub.github.io.git
+cd Subhadra-Mishra-iub.github.io
 ```
 
 2. Install dependencies:
