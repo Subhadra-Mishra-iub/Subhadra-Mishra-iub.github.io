@@ -13,14 +13,14 @@
  */
 const work = [
   {
-    name: 'Handshake AI Solutions LLC',
-    position: 'AI Research Fellow (MOVE Fellowship)',
+    name: 'Handshake AI',
+    position: 'AI Model Evaluation & Annotation Analyst',
     url: '',
     startDate: '2025-08-01',
-    summary: 'Evaluating LLM outputs and developing structured workflows for data validation, logging, and metrics review to improve model consistency and reliability.',
+    summary: 'Designing adversarial prompts and structured evaluation frameworks to systematically test LLM reliability across multi-model pipelines, with systematic failure analysis and scoring rubrics to improve reasoning robustness and model alignment.',
     highlights: [
-      'Evaluated LLM outputs within an established evaluation pipeline by generating prompts and analyzing predefined parameters to identify failures, regressions, and edge cases, improving consistency and reliability',
-      'Developed structured workflows for data validation, logging, and metrics review that surfaced edge cases earlier and made model comparison easier to debug, analyze, and tune for performance',
+      'Designed adversarial prompts and structured evaluation frameworks to systematically test LLM reliability across 3-model pipelines, benchmarking outputs against defined performance thresholds',
+      'Performed systematic failure analysis on multi-step workflows, developed scoring rubrics, and benchmarked outputs against sub-40% thresholds to improve reasoning robustness and model alignment',
     ],
   },
   {
